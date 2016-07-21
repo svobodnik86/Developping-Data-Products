@@ -26,9 +26,6 @@ presidentsDF <- data.frame(year,Q1,Q2,Q3,Q4, presidentNames,row.names = NULL)
 presidentsDF$Q3[30]<-NA
 presidentsDF$Q4[30]<-NA
 
-#x<-presidentsDF[presidentsDF$presidentNames=="Harry S. Truman",2:5]
-#> max(x, na.rm=TRUE)
-
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
@@ -87,6 +84,5 @@ shinyServer(function(input, output) {
       }
       minmax
   }
-  
-  
+
 })
